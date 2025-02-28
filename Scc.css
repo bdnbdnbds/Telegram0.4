@@ -1,0 +1,276 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: white; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #0088cc;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.header-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 70%; 
+    height: auto;
+}
+
+
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #1d1f23;
+}
+
+.about-section h1 {
+    color: #0088cc;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #ddd;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-image {
+    max-width: 300px; 
+    height: auto;
+    margin: 0 10px;
+}
+
+.features-section {
+    background-color: #1d1f23;
+    padding: 40px 20px;
+}
+
+.features-section h2 {
+    color: #0088cc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #2b2f36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item img {
+    max-width: 120px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    color: #0088cc;
+    font-size: 1.5em;
+}
+
+/* Секція новин */
+.news-section {
+    background-color: #1d1f23;
+    padding: 40px 20px;
+}
+
+.news-section h2 {
+    color: #0088cc;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background-color: #2b2f36;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.news-item img {
+    max-width: 100px; 
+    height: auto;
+    margin-right: 20px;
+}
+
+.news-text h3 {
+    color: #0088cc;
+    font-size: 1.2em;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #2b2f36;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0088cc;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #3c3f47;
+}
+
+.contact-section {
+    background-color: #1d1f23;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #0088cc;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 15px;
+}
+
+.social-links img {
+    width: 50px; 
+    height: 50px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links img:hover {
+    opacity: 0.7;
+}
+
+footer {
+    position: relative;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+footer #footer-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .footer-content {
+    position: relative;
+    z-index: 1;
+}
+
+footer h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer .social-links a:hover {
+    color: #4CAF50;
+}
+
